@@ -1,0 +1,43 @@
+#!/usr/bin/env python3
+import json
+import os
+from pathlib import Path
+
+def check_srt_files():
+    # 定义文件路径
+    json_path = Path("video.json")
+    srt_dir = Path("srts")
+    
+    try:
+        # 读取JSON文件
+        with open(json_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        
+        # 获取所有srt文件的基本名称（不带扩展名）
+        srt_basenames = {p.stem for p in srt_dir.glob('*') if p.is_file()}
+        
+        # 更新每个条目
+        for item in data:
+            item_id = item.get('id', '')
+            if not item_id:
+                print(f"警告: 发现无id的条目 -> {item}")
+                continue
+                
+            item['hasSrt'] = item_id in srt_basenames
+        
+        # 写回JSON文件
+        with open(json_path, 'w', encoding='utf-8') as f:
+            json.dump(data, f, indent=2, ensure_ascii=False)
+            f.write('\n')  # 添加结尾换行符
+        
+        print("处理完成！已更新", len(data), "个条目")
+    
+    except FileNotFoundError as e:
+        print(f"错误: 文件/目录不存在 -> {e}")
+    except json.JSONDecodeError as e:
+        print(f"错误: JSON格式无效 -> {e}")
+    except Exception as e:
+        print(f"未知错误: {str(e)}")
+
+if __name__ == "__main__":
+    check_srt_files()

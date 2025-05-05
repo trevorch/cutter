@@ -2,6 +2,7 @@
 import json
 import requests
 import time
+import random
 from datetime import datetime, timedelta
 from typing import Dict, List
 
@@ -52,9 +53,8 @@ class VideoFetcher:
             print(response.text)
             raise RuntimeError(f"JSON解析失败: {str(e)}") from e
         finally:
-            # 无论成功与否都增加1秒延迟
-            time.sleep(1)
-
+            # 生成 1.0 ~ 3.0 之间的随机浮点数（包含小数）
+            time.sleep(random.uniform(1, 4))
 
     def get_video_list(self) -> List[Dict]:
         """获取分页视频列表"""
@@ -62,7 +62,8 @@ class VideoFetcher:
             f"{self.base_url}/live_api/playback/list"
             f"?count={self.page_size}"
             f"&principalId=dabingdekuaishou"
-            f"&pcursor={self.page_cursor}"
+            f"&cursor={self.page_cursor}"
+            f"&hasMore={self.has_more}"
         )
         print("\n" + "="*50)
         print("正在获取视频列表...")
@@ -134,7 +135,7 @@ class VideoFetcher:
                 
                 # 按时间戳降序排序
                 self.videos.sort(key=lambda x: x["timestamp"], reverse=True)
-                print(f"当前已收集 {len(self.videos)} 个有效视频")
+                print(f"\033[92m当前已收集 {len(self.videos)} 个有效视频\033[0m")
                 
             except Exception as e:
                 print(f"处理过程中发生错误: {str(e)}")

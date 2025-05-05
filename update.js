@@ -112,18 +112,9 @@
             return;
         }
     
-        try {
-            // 转换数据格式
-            const formattedData = videoData.map(item => ({
-                id: item.id,
-                timestamp: item.timestamp,
-                date: formatDate(item.timestamp),
-                urls: item.urls,
-                hasSrt: false // 默认设为false
-            }));
-    
+        try { 
             // 生成格式化的JSON字符串
-            const jsonString = JSON.stringify(formattedData, null, 4);
+            const jsonString = JSON.stringify(videoData, null, 4);
             
             // 复制到剪贴板
             navigator.clipboard.writeText(jsonString)
@@ -133,19 +124,19 @@
             showMessage(`生成JSON失败: ${error.message}`);
         }
     });
-    
-    // 添加日期格式化函数
-    function formatDate(timestamp) {
-        const date = new Date(timestamp + 8 * 3600 * 1000);
-        const year = date.getUTCFullYear();
-        const month = (date.getUTCMonth() + 1).toString().padStart(2, '0');
-        const day = date.getUTCDate().toString().padStart(2, '0');
-        const hours = date.getUTCHours().toString().padStart(2, '0');
-        const minutes = date.getUTCMinutes().toString().padStart(2, '0');
-        const seconds = date.getUTCSeconds().toString().padStart(2, '0');
-        return `${year}${month}${day} ${hours}:${minutes}:${seconds}`;
-    }
 
+  }
+  
+  // 添加日期格式化函数
+  function formatDate(timestamp) {
+      const date = new Date(timestamp + 8 * 3600 * 1000);
+      const year = date.getUTCFullYear();
+      const month = (date.getUTCMonth() + 1).toString().padStart(2, '0');
+      const day = date.getUTCDate().toString().padStart(2, '0');
+      const hours = date.getUTCHours().toString().padStart(2, '0');
+      const minutes = date.getUTCMinutes().toString().padStart(2, '0');
+      const seconds = date.getUTCSeconds().toString().padStart(2, '0');
+      return `${year}${month}${day} ${hours}:${minutes}:${seconds}`;
   }
 
   // 核心数据加载逻辑
@@ -154,12 +145,12 @@
 
     try {
       const url = `https://live.kuaishou.com/live_api/playback/list?count=${PAGE_SIZE}&principalId=dabingdekuaishou&cursor=${pageCursor}`
-      console.log(url)
+      
       const { data } = await fetchAPI(url);
 
       if (data?.list?.length) {
-        await processVideoItems(data.list);
-        renderVideoItems(data.list);
+        const tempResults = await processVideoItems(data.list);
+        renderVideoItems(tempResults);
         
         pageCursor = data.pcursor || '';
         hasMore = data.pcursor!='no_more';
@@ -187,7 +178,9 @@
             tempResults.push({
               id: item.id,
               timestamp: item.createTime,
-              urls: extractVideoUrls(detail.currentWork)
+              date:formatDate(item.createTime),
+              urls: extractVideoUrls(detail.currentWork),
+              hasSrt: false
             });
           }
         } catch(error) {
@@ -209,16 +202,16 @@
         item));
       videoData.length = 0;
       videoData.push(...Array.from(uniqueMap.values()));
+      return sortedResults
     }
 
 
     // 辅助函数
     async function fetchVideoDetail(videoId) {
-      const {
-        data
-      } = await fetchAPI(
-        `https://live.kuaishou.com/live_api/playback/detail?productId=${videoId}`
-      );
+      const url = `https://live.kuaishou.com/live_api/playback/detail?productId=${videoId}`
+      console.log(url)
+      const { data } = await fetchAPI(url);
+      console.warn(data)
       return data;
     }
 
@@ -231,17 +224,17 @@
 
     function renderVideoItems(items) {
       const $content = $('.list-content');
-      items.forEach((_,
-        index) => {
-        const video = videoData[videoData.length - items.length + index];
-        $content.append(createVideoItem(video));
-      });
+      items.forEach(item => $content.append(createVideoItem(item))); 
     }
-
+    
+    const formatNumber = num => String(num).padStart(4, '0')
+ 
+    let counter = 0;
     function createVideoItem(video) {
+      counter = counter + 1
       return $(`
         <div class="video-item" data-id="${video.id}">
-        <div class="video-date">${formatTime(video.timestamp)} - ${video.id}</div>
+        <div class="video-date">【${formatNumber(counter)}】  ${video.date} - ${video.id}</div>
         </div>
         `);
     }
@@ -295,7 +288,7 @@
               opacity: 0;">
               <div class="msg-close"
                   style="position:absolute;
-                  top:20px;
+                  top:5px;
                   right:20px;
                   width:50px;
                   height:50px;
@@ -332,7 +325,6 @@
     try {
       initUI();
       setupEventListeners();
-      await loadNextPage();
     } catch(error) {
       showMessage('初始化失败: ' + error.message);
     }

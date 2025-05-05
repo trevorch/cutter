@@ -35,14 +35,14 @@
       }
       #copy-json {
         left: 20px;
-        top: 20px;
+        bottom: 20px;
       }
       #load-all {
         right: 20px;
-        top: 20px;
+        bottom: 20px;
       }
       .list-content {
-        margin-top: 60px;
+        margin-bottom: 20px;
         padding: 20px;
       }
       .video-item {
@@ -242,7 +242,6 @@
       return $(`
         <div class="video-item" data-id="${video.id}">
         <div class="video-date">${formatTime(video.timestamp)} - ${video.id}</div>
-        <button class="copy-button">复制</button>
         </div>
         `);
     }

@@ -294,7 +294,7 @@
       "https://alivod.a.yximgs.com/livedvr2/flv2ts/gifshow/gC-dqClmDVs.1743946138045-18837262.0-16.m3u8?auth_key=1748019412-1304644003-0-edd42f7215f31742a020222dc682c83c&caller=webservice-gzone-web-api&kpn=",
       "https://alivod.a.yximgs.com/livedvr2/flv2ts/gifshow/gC-dqClmDVs_ShowAvcHdL0.1743946138045-18837262.0-16.m3u8?auth_key=1748019412-639018928-0-62000a4384e99bc72cb4bfc22c7e9996&caller=webservice-gzone-web-api&kpn="
     ],
-    "hasSrt": false
+    "hasSrt": true
   },
   {
     "id": "3x7w7h5zu6i2q7u",
@@ -305,7 +305,7 @@
       "https://alivod.a.yximgs.com/livedvr2/flv2ts/gifshow/T-mbWGABc0Q.1743773499457-16767281.0-16.m3u8?auth_key=1748019412-757021543-0-4ada572d2b037e486170baf111c509d1&caller=webservice-gzone-web-api&kpn=",
       "https://alivod.a.yximgs.com/livedvr2/flv2ts/gifshow/T-mbWGABc0Q_avc1000m.1743773499457-16767281.0-16.m3u8?auth_key=1748019412-152180629-0-c062f071146a96801fbb91e4b1e13bca&caller=webservice-gzone-web-api&kpn="
     ],
-    "hasSrt": false
+    "hasSrt": true
   },
   {
     "id": "3xp7jjjb9fgyvxu",

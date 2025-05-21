@@ -448,7 +448,7 @@
       "https://alivod.a.yximgs.com/livedvr2/flv2ts/gifshow/0MnDGby3LTA.1743341109052-22815867.0-16.m3u8?auth_key=1748413670-1433031138-0-aa9ebbadd5063666ce38f19c188a7954&caller=webservice-gzone-web-api&kpn=",
       "https://alivod.a.yximgs.com/livedvr2/flv2ts/gifshow/0MnDGby3LTA_ShowAvcHdL0.1743341109052-22815867.0-16.m3u8?auth_key=1748413670-1107361432-0-7f317c86df277f87a3c41d6e0ff647ac&caller=webservice-gzone-web-api&kpn="
     ],
-    "hasSrt": false
+    "hasSrt": true
   },
   {
     "id": "3xx3xzr88c3qijq",

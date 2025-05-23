@@ -127,6 +127,8 @@
 
   }
   
+  
+  
   // 添加日期格式化函数
   function formatDate(timestamp) {
       const date = new Date(timestamp + 8 * 3600 * 1000);
@@ -154,6 +156,8 @@
         
         pageCursor = data.pcursor || '';
         hasMore = data.pcursor!='no_more';
+        
+        $('#loading-overlay .loading-text').html(`已加载(${videoData.length})条数据`);
         
         console.log(data)
       } else {
@@ -234,11 +238,24 @@
       counter = counter + 1
       return $(`
         <div class="video-item" data-id="${video.id}">
-        <div class="video-date">【${formatNumber(counter)}】  ${video.date} - ${video.id}</div>
+          <div class="video-date">
+            【${formatNumber(counter)}】  
+            <a href="javascript:docopy('${video.urls[0]}','链接');">${video.date}</a> - <a href="javascript:docopy('${video.id}','ID');">${video.id}</a>
+          </div>
         </div>
         `);
     }
  
+   window.docopy = function(txt,tips) {
+        try { 
+            // 复制到
+            navigator.clipboard.writeText(txt)
+                .then(() => showMessage(tips+'已复制到剪贴板:'+txt, 'success'))
+                .catch(err => showMessage(tips+`复制失败: ${err.message}`));
+        } catch (error) {
+            showMessage(tips+`复制失败: ${error.message}`);
+        }
+    }
 
     function formatTime(timestamp) {
       return new Date(timestamp + 8 * 3600 * 1000)

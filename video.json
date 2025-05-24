@@ -2569,7 +2569,7 @@
       "https://alivod.a.yximgs.com/livedvr2/flv2ts/gifshow/rOy555sT0ZY.1717689462593-8034927.0-16.m3u8?auth_key=1748568177-1119425945-0-59c6f061eb262f5a9108e821f6514786&caller=webservice-gzone-web-api&kpn=",
       "https://alivod.a.yximgs.com/livedvr2/flv2ts/gifshow/rOy555sT0ZY_avc1000m.1717689462593-8034927.0-16.m3u8?auth_key=1748568177-1970175989-0-78a31cb3012bae4211e978d7e566d214&caller=webservice-gzone-web-api&kpn="
     ],
-    "hasSrt": false
+    "hasSrt": true
   },
   {
     "id": "3x5cgmyfkafx7da",
@@ -2602,7 +2602,7 @@
       "https://alivod.a.yximgs.com/livedvr2/flv2ts/gifshow/SAOypU5ke2I.1717514336023-11928620.0-16.m3u8?auth_key=1748568177-1478229734-0-76dab2a35d33a0a0602e62aec6fff9b4&caller=webservice-gzone-web-api&kpn=",
       "https://alivod.a.yximgs.com/livedvr2/flv2ts/gifshow/SAOypU5ke2I_avc1000m.1717514336023-11928620.0-16.m3u8?auth_key=1748568177-1337494055-0-a732bc703432b0349a90e687b1d8c6cd&caller=webservice-gzone-web-api&kpn="
     ],
-    "hasSrt": false
+    "hasSrt": true
   },
   {
     "id": "3x3a9xs9quhuvdi",
@@ -2657,7 +2657,7 @@
       "https://alivod.a.yximgs.com/livedvr2/flv2ts/gifshow/aFgdvqPpT4g.1717426236915-5381042.0-16.m3u8?auth_key=1748568178-776897288-0-3b0122148c52abb6a178c1b9f09a8c41&caller=webservice-gzone-web-api&kpn=",
       "https://alivod.a.yximgs.com/livedvr2/flv2ts/gifshow/aFgdvqPpT4g_avc1000m.1717426236915-5381042.0-16.m3u8?auth_key=1748568178-1476268286-0-7a4727e3b2c604eaeafa164c3383db9c&caller=webservice-gzone-web-api&kpn="
     ],
-    "hasSrt": false
+    "hasSrt": true
   },
   {
     "id": "3xpqqb39b3y7uzq",
@@ -2690,7 +2690,7 @@
       "https://alivod.a.yximgs.com/livedvr2/flv2ts/gifshow/Hix4n0Z6VK4.1717337635854-7495619.0-16.m3u8?auth_key=1748568178-1421909312-0-c2377a513dc15702eec12c11184df413&caller=webservice-gzone-web-api&kpn=",
       "https://alivod.a.yximgs.com/livedvr2/flv2ts/gifshow/Hix4n0Z6VK4_avc1000m.1717337635854-7495619.0-16.m3u8?auth_key=1748568178-1355375363-0-dd6134030260fb81c53b0eb73c6e35f0&caller=webservice-gzone-web-api&kpn="
     ],
-    "hasSrt": false
+    "hasSrt": true
   },
   {
     "id": "3xe6qrde6ek97j2",
@@ -2712,7 +2712,7 @@
       "https://alivod.a.yximgs.com/livedvr2/flv2ts/gifshow/1iAGJLVWzeo.1717251447126-6582063.0-16.m3u8?auth_key=1748568178-132659799-0-22a8fc9842e985bcdfc7dc76d04c434e&caller=webservice-gzone-web-api&kpn=",
       "https://alivod.a.yximgs.com/livedvr2/flv2ts/gifshow/1iAGJLVWzeo_avc1000m.1717251447126-6582063.0-16.m3u8?auth_key=1748568178-670163798-0-738ec449d38412a58ecd53a645339492&caller=webservice-gzone-web-api&kpn="
     ],
-    "hasSrt": false
+    "hasSrt": true
   },
   {
     "id": "3xiq9nhchhkmy2s",
@@ -2723,7 +2723,7 @@
       "https://alivod.a.yximgs.com/livedvr2/flv2ts/gifshow/mB0SPe8PPAA.1717246953436-4244773.0-16.m3u8?auth_key=1748568178-1045398060-0-3c91db14c0f5f70f814726200e3e1529&caller=webservice-gzone-web-api&kpn=",
       "https://alivod.a.yximgs.com/livedvr2/flv2ts/gifshow/mB0SPe8PPAA_avc1000m.1717246953436-4244773.0-16.m3u8?auth_key=1748568178-1914321575-0-8a21f65539520bc5dba1146d5e27c65b&caller=webservice-gzone-web-api&kpn="
     ],
-    "hasSrt": false
+    "hasSrt": true
   },
   {
     "id": "3xqbhpxixuacrke",

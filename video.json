@@ -591,7 +591,7 @@
       "https://alivod.a.yximgs.com/livedvr2/flv2ts/gifshow/YWZHmo8rkHk.1741786288060-20163648.0-16.m3u8?auth_key=1748912083-914105399-0-d6dd56ee58d572d4147ba3fd45193e37&caller=webservice-gzone-web-api&kpn=",
       "https://alivod.a.yximgs.com/livedvr2/flv2ts/gifshow/YWZHmo8rkHk_ShowAvcHdL0.1741786288060-20163648.0-16.m3u8?auth_key=1748912083-1816334739-0-eae80a7f492700b75a894a8c63ca5360&caller=webservice-gzone-web-api&kpn="
     ],
-    "hasSrt": false
+    "hasSrt": true
   },
   {
     "id": "3xx3km47szh8dgc",
@@ -602,7 +602,7 @@
       "https://alivod.a.yximgs.com/livedvr2/flv2ts/gifshow/-A06LJyZu0M.1741613476369-22758189.0-16.m3u8?auth_key=1748912083-602306546-0-7832fa3e9eca1ff156c0623ac4462be2&caller=webservice-gzone-web-api&kpn=",
       "https://alivod.a.yximgs.com/livedvr2/flv2ts/gifshow/-A06LJyZu0M_ShowAvcHdL0.1741613476369-22758189.0-16.m3u8?auth_key=1748912083-1962877478-0-412c10cb81263ccc53bc1572b3611dc2&caller=webservice-gzone-web-api&kpn="
     ],
-    "hasSrt": false
+    "hasSrt": true
   },
   {
     "id": "3xic7fq4s6sdy32",
@@ -613,7 +613,7 @@
       "https://alivod.a.yximgs.com/livedvr2/flv2ts/gifshow/MuvV6rQ3gHM.1741441987191-26780233.0-16.m3u8?auth_key=1748912083-1159325882-0-832c644146763e992d67df22dec15bd2&caller=webservice-gzone-web-api&kpn=",
       "https://alivod.a.yximgs.com/livedvr2/flv2ts/gifshow/MuvV6rQ3gHM_ShowAvcHdL0.1741441987191-26780233.0-16.m3u8?auth_key=1748912083-13357037-0-69871b03ac3e07984ab9712ee06d9990&caller=webservice-gzone-web-api&kpn="
     ],
-    "hasSrt": false
+    "hasSrt": true
   },
   {
     "id": "3xbbypuew94aqsi",
@@ -646,7 +646,7 @@
       "https://alivod.a.yximgs.com/livedvr2/flv2ts/gifshow/nbbvZqk9hN4.1740922372214-22657553.0-16.m3u8?auth_key=1748912084-138671712-0-c36a51dcbe4711f7b99860a2a96930ef&caller=webservice-gzone-web-api&kpn=",
       "https://alivod.a.yximgs.com/livedvr2/flv2ts/gifshow/nbbvZqk9hN4_ShowAvcHdL0.1740922372214-22657553.0-16.m3u8?auth_key=1748912084-259951851-0-9226842b929ff9f4ed0fa64522969634&caller=webservice-gzone-web-api&kpn="
     ],
-    "hasSrt": false
+    "hasSrt": true
   },
   {
     "id": "3xxsurng4wqy3bu",
@@ -657,7 +657,7 @@
       "https://alivod.a.yximgs.com/livedvr2/flv2ts/gifshow/W8nHC-3zv40.1740749470086-21938734.0-16.m3u8?auth_key=1748912084-246646254-0-597cd04aa2de6bfb8d150e587eac9197&caller=webservice-gzone-web-api&kpn=",
       "https://alivod.a.yximgs.com/livedvr2/flv2ts/gifshow/W8nHC-3zv40_ShowAvcHdL0.1740749470086-21938734.0-16.m3u8?auth_key=1748912084-2100418709-0-4a4e6e6970f329ec3c8e7410a60acff9&caller=webservice-gzone-web-api&kpn="
     ],
-    "hasSrt": false
+    "hasSrt": true
   },
   {
     "id": "3xtbdijqcyn5ife",
@@ -668,7 +668,7 @@
       "https://alivod.a.yximgs.com/livedvr2/flv2ts/gifshow/WJou46uMLnA.1740574934844-26247940.0-16.m3u8?auth_key=1748912084-1466276082-0-14df2fe513be60c9b5bb34646fbfe3cf&caller=webservice-gzone-web-api&kpn=",
       "https://alivod.a.yximgs.com/livedvr2/flv2ts/gifshow/WJou46uMLnA_ShowAvcHdL0.1740574934844-26247940.0-16.m3u8?auth_key=1748912084-114448615-0-9b584e264eca27759110c7a203ef178e&caller=webservice-gzone-web-api&kpn="
     ],
-    "hasSrt": false
+    "hasSrt": true
   },
   {
     "id": "3xcf6s8msi6ytnk",
@@ -679,7 +679,7 @@
       "https://alivod.a.yximgs.com/livedvr2/flv2ts/gifshow/oEbfMkWcrws.1740403826754-24392867.0-16.m3u8?auth_key=1748912084-1068577920-0-3fbfed8b0b754e284c0d7b982f35e807&caller=webservice-gzone-web-api&kpn=",
       "https://alivod.a.yximgs.com/livedvr2/flv2ts/gifshow/oEbfMkWcrws_ShowAvcHdL0.1740403826754-24392867.0-16.m3u8?auth_key=1748912084-843643556-0-21b4554e777baf5ecd422989a9084240&caller=webservice-gzone-web-api&kpn="
     ],
-    "hasSrt": false
+    "hasSrt": true
   },
   {
     "id": "3x6zwkm3eynsu8m",
@@ -690,7 +690,7 @@
       "https://alivod.a.yximgs.com/livedvr2/flv2ts/gifshow/qutDjefQogA.1740240691998-10407988.0-16.m3u8?auth_key=1748912084-781760970-0-07a53cbde1500f1360abd4c66da648a1&caller=webservice-gzone-web-api&kpn=",
       "https://alivod.a.yximgs.com/livedvr2/flv2ts/gifshow/qutDjefQogA_ShowAvcHdL0.1740240691998-10407988.0-16.m3u8?auth_key=1748912084-1416237860-0-5c50080da94342db17fb7022bd4430a1&caller=webservice-gzone-web-api&kpn="
     ],
-    "hasSrt": false
+    "hasSrt": true
   },
   {
     "id": "3xw72utdg4ggsf6",

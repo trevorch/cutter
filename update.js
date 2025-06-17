@@ -43,7 +43,7 @@
       }
       .list-content {
         margin-bottom: 20px;
-        padding: 20px;
+        padding: 10px;
       }
       .video-item {
         padding: 10px;
@@ -240,13 +240,15 @@
         <div class="video-item" data-id="${video.id}">
           <div class="video-date">
             【${formatNumber(counter)}】  
-            <a href="javascript:docopy('${video.urls[0]}','链接');">${video.date}</a> - <a href="javascript:docopy('${video.id}','ID');">${video.id}</a>
+            <a href="javascript:docopy('${JSON.stringify(video, null, 4)}','JSON');">JSON</a> - 
+            <a href="javascript:docopy('${video.urls[0]}','链接');">${video.date}</a> - 
+            <a href="javascript:docopy('${video.id}','ID');">${video.id}</a>
           </div>
         </div>
         `);
     }
  
-   window.docopy = function(txt,tips) {
+    window.docopy = function(txt,tips) {
         try { 
             // 复制到
             navigator.clipboard.writeText(txt)

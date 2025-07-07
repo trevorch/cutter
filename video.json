@@ -1,5 +1,16 @@
 [
   {
+    "id": "3xdnetrpz9hz6z9",
+    "timestamp": 1751909051040,
+    "date": "20250708 01:24:11",
+    "urls": [
+      "https://alivod.a.yximgs.com/livedvr/flv2ts/gifshow/c8SNJJXczg4_avc1000m.1751894862952-14153419.0-16.m3u8?auth_key=1752528414-1887905880-0-3fcbfb3fc9481222c436d5695ff6d6ee&caller=webservice-gzone-web-api&kpn=GAME_ZONE",
+      "https://alivod.a.yximgs.com/livedvr/flv2ts/gifshow/c8SNJJXczg4.1751894862952-14153419.0-16.m3u8?auth_key=1752528414-172666477-0-e5b455cec2f0e4d2adbf0468f6d66c06&caller=webservice-gzone-web-api&kpn=",
+      "https://alivod.a.yximgs.com/livedvr/flv2ts/gifshow/c8SNJJXczg4_avc1000m.1751894862952-14153419.0-16.m3u8?auth_key=1752528414-1061987179-0-a36bc1157a20a3f912fa32678ae0b20a&caller=webservice-gzone-web-api&kpn="
+    ],
+    "hasSrt": true
+  },
+  {
     "id": "3x3edyscghbt2ea",
     "timestamp": 1751738094195,
     "date": "20250706 01:54:54",

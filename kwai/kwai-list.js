@@ -184,7 +184,8 @@
               timestamp: item.createTime,
               date:formatDate(item.createTime),
               urls: extractVideoUrls(detail.currentWork),
-              hasSrt: false
+              hasSrt: false,
+              dsource: 'kwai'
             });
           }
         } catch(error) {

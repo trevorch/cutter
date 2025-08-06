@@ -1,82 +1,12 @@
 [
   {
-    "id": "3af589d11b",
-    "timestamp": 1754404355025,
-    "date": "20250806 23:48:25",
+    "id": "58180dda48",
+    "timestamp": 1754498155000,
+    "date": "20250807 01:42:32",
     "urls": [
-      "local/seal/XRecorder_20250805_02.mp4"
+      "local/seal/【館長直播完整版】2025⧸08⧸06⧸週三  比亞迪火片全台灣 行動炸彈車 弱智納粹 低能霸團 鐘小平出來面對 [1DOEGVJgNV8].mp4"
     ],
-    "hasSrt": false,
-    "dsource": "local"
-  },
-  {
-    "id": "60092b0b7a",
-    "timestamp": 1754402787697,
-    "date": "20250806 23:48:26",
-    "urls": [
-      "local/seal/Record_2025-08-05-21-56-03_73230ea9d8560975a5358fd7bd043f47.mp4"
-    ],
-    "hasSrt": false,
-    "dsource": "local"
-  },
-  {
-    "id": "e03402f6fb",
-    "timestamp": 1754387136749,
-    "date": "20250806 23:48:26",
-    "urls": [
-      "local/seal/Record_2025-08-05-17-44-44_73230ea9d8560975a5358fd7bd043f47.mp4"
-    ],
-    "hasSrt": false,
-    "dsource": "local"
-  },
-  {
-    "id": "f51f170229",
-    "timestamp": 1754361510361,
-    "date": "20250806 23:48:26",
-    "urls": [
-      "local/seal/video_250805_103441.mp4"
-    ],
-    "hasSrt": false,
-    "dsource": "local"
-  },
-  {
-    "id": "13203c22b5",
-    "timestamp": 1754360443165,
-    "date": "20250806 23:48:26",
-    "urls": [
-      "local/seal/Record_2025-08-05-10-06-31_73230ea9d8560975a5358fd7bd043f47.mp4"
-    ],
-    "hasSrt": false,
-    "dsource": "local"
-  },
-  {
-    "id": "9cfe8bb0b7",
-    "timestamp": 1754356716553,
-    "date": "20250806 23:48:26",
-    "urls": [
-      "local/seal/video_250805_091353.mp4"
-    ],
-    "hasSrt": false,
-    "dsource": "local"
-  },
-  {
-    "id": "0d9c346b9e",
-    "timestamp": 1754355883785,
-    "date": "20250806 23:48:26",
-    "urls": [
-      "local/seal/Record_2025-08-05-08-44-58_73230ea9d8560975a5358fd7bd043f47.mp4"
-    ],
-    "hasSrt": false,
-    "dsource": "local"
-  },
-  {
-    "id": "012a11b8af",
-    "timestamp": 1754286785344,
-    "date": "20250806 23:48:26",
-    "urls": [
-      "local/seal/video_250804_134601.mp4"
-    ],
-    "hasSrt": false,
+    "hasSrt": true,
     "dsource": "local"
   }
 ]

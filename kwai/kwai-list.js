@@ -142,6 +142,21 @@
       const seconds = date.getUTCSeconds().toString().padStart(2, '0');
       return `${year}${month}${day} ${hours}:${minutes}:${seconds}`;
   }
+  
+  function getPreviousDayYMD(timestamp) {
+      const date = new Date(timestamp + 8 * 3600 * 1000); // 处理时区偏移（东八区）
+      const hours = date.getUTCHours();
+      
+      // 如果是0点到6点，则减去一天
+      if (hours >= 0 && hours < 6) {
+          date.setUTCDate(date.getUTCDate() - 1);
+      }
+      
+      const year = date.getUTCFullYear();
+      const month = (date.getUTCMonth() + 1).toString().padStart(2, '0');
+      const day = date.getUTCDate().toString().padStart(2, '0');
+      return `${year}${month}${day}`;
+  }
 
   // 核心数据加载逻辑
   async function loadNextPage() {
@@ -189,6 +204,7 @@
               id: item.id,
               timestamp: item.createTime,
               date:formatDate(item.createTime),
+              ymd: getPreviousDayYMD(item.createTime),
               urls: extractVideoUrls(detail.currentWork),
               hasSrt: false,
               dsource: 'kwai'
@@ -251,7 +267,7 @@
           <div class="video-date">
             <a href="javascript:docopy('gdmp3 ${video.urls[0]} ${video.id}','命令');">【${formatNumber(counter)}】</a> - 
             <a href="javascript:docopyJSON('${video.id}','JSON');">JSON</a> - 
-            <a href="javascript:docopy('${video.urls[0]}','链接');">${video.date}</a> - 
+            <a href="javascript:docopy('${video.urls[0]}','链接');">${video.ymd}</a> - 
             <a href="javascript:docopy('${video.id}','ID');">${video.id}</a>
           </div>
         </div>

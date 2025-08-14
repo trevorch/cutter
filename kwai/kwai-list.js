@@ -276,7 +276,7 @@
       return $(`
         <div class="video-item" data-id="${video.id}">
           <div class="video-date ${video.isEarlyMorning?'morning':''}">
-            <a href="javascript:docopy('gdmp3 ${video.urls[0]} ${video.id}','命令');">【${formatNumber(counter)}】</a> - 
+            <a href="javascript:docopyCMD('${video.id}','命令');">【${formatNumber(counter)}】</a> - 
             <a href="javascript:docopyJSON('${video.id}','JSON');">JSON</a> - 
             <a href="javascript:docopy('${video.urls[0]}','链接');">${video.ymd}</a> - 
             <a href="javascript:docopy('${video.id}','ID');">${video.id}</a>
@@ -301,6 +301,19 @@
             // 复制到
             const v = videoMap.get(id)
             const txt = JSON.stringify(v)
+            navigator.clipboard.writeText(txt)
+                .then(() => showMessage(tips+'已复制到剪贴板:'+txt, 'success'))
+                .catch(err => showMessage(tips+`复制失败: ${err.message}`));
+        } catch (error) {
+            showMessage(tips+`复制失败: ${error.message}`);
+        }
+    }
+    
+    window.docopyCMD = function(id,tips) {
+        try { 
+            // 复制到
+            const v = videoMap.get(id)
+            const txt = `gdmp3 '${v.urls[0]}' ${v.id}`
             navigator.clipboard.writeText(txt)
                 .then(() => showMessage(tips+'已复制到剪贴板:'+txt, 'success'))
                 .catch(err => showMessage(tips+`复制失败: ${err.message}`));

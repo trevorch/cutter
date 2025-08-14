@@ -66,6 +66,10 @@
         background: rgba(0,0,0,0.5);
         z-index: 9998;
       }
+      
+      .morning a{
+        color: green;
+      }
     `);
     
     $('body').html('')
@@ -157,6 +161,12 @@
       const day = date.getUTCDate().toString().padStart(2, '0');
       return `${year}${month}${day}`;
   }
+  
+  function isEarlyMorning(time) {
+    const date = new Date(time); // 将时间字符串转换为 Date 对象
+    const hours = date.getHours(); // 获取小时数
+    return hours >= 0 && hours < 6; // 返回是否为凌晨
+  }
 
   // 核心数据加载逻辑
   async function loadNextPage() {
@@ -207,7 +217,8 @@
               ymd: getPreviousDayYMD(item.createTime),
               urls: extractVideoUrls(detail.currentWork),
               hasSrt: false,
-              dsource: 'kwai'
+              dsource: 'kwai',
+              isEarlyMorning: isEarlyMorning(item.createTime)
             });
           }
         } catch(error) {
@@ -264,7 +275,7 @@
       counter = counter + 1
       return $(`
         <div class="video-item" data-id="${video.id}">
-          <div class="video-date">
+          <div class="video-date ${video.isEarlyMorning?'morning':''}">
             <a href="javascript:docopy('gdmp3 ${video.urls[0]} ${video.id}','命令');">【${formatNumber(counter)}】</a> - 
             <a href="javascript:docopyJSON('${video.id}','JSON');">JSON</a> - 
             <a href="javascript:docopy('${video.urls[0]}','链接');">${video.ymd}</a> - 

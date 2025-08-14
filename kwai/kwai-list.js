@@ -19,6 +19,8 @@
   let pageCursor = '';
   let hasMore = true;
   const PAGE_SIZE = 20; 
+  const videoMap = new Map();
+
 
   // 初始化页面结构
   function initUI() {
@@ -60,7 +62,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
+        height: 10px;
         background: rgba(0,0,0,0.5);
         z-index: 9998;
       }
@@ -154,6 +156,10 @@
         const tempResults = await processVideoItems(data.list);
         renderVideoItems(tempResults);
         
+        tempResults.forEach(video => {
+          videoMap.set(video.id, video);
+        }); 
+        
         pageCursor = data.pcursor || '';
         hasMore = data.pcursor!='no_more';
         
@@ -229,19 +235,22 @@
 
     function renderVideoItems(items) {
       const $content = $('.list-content');
-      items.forEach(item => $content.append(createVideoItem(item))); 
+      items.forEach((item, index) => {
+        $content.append(createVideoItem(item, index)); // 将索引传递给createVideoItem
+      });
+
     }
     
     const formatNumber = num => String(num).padStart(4, '0')
  
     let counter = 0;
-    function createVideoItem(video) {
+    function createVideoItem(video, index) {
       counter = counter + 1
       return $(`
         <div class="video-item" data-id="${video.id}">
           <div class="video-date">
-            【${formatNumber(counter)}】  
-            <a href="javascript:docopy('${JSON.stringify(video, null, 4)}','JSON');">JSON</a> - 
+            <a href="javascript:docopy('gdmp3 ${video.urls[0]} ${video.id}','命令');">【${formatNumber(counter)}】</a> - 
+            <a href="javascript:docopyJSON('${video.id}','JSON');">JSON</a> - 
             <a href="javascript:docopy('${video.urls[0]}','链接');">${video.date}</a> - 
             <a href="javascript:docopy('${video.id}','ID');">${video.id}</a>
           </div>
@@ -259,6 +268,20 @@
             showMessage(tips+`复制失败: ${error.message}`);
         }
     }
+    
+    window.docopyJSON = function(id,tips) {
+        try { 
+            // 复制到
+            const v = videoMap.get(id)
+            const txt = JSON.stringify(v)
+            navigator.clipboard.writeText(txt)
+                .then(() => showMessage(tips+'已复制到剪贴板:'+txt, 'success'))
+                .catch(err => showMessage(tips+`复制失败: ${err.message}`));
+        } catch (error) {
+            showMessage(tips+`复制失败: ${error.message}`);
+        }
+    }
+     
 
     function formatTime(timestamp) {
       return new Date(timestamp + 8 * 3600 * 1000)

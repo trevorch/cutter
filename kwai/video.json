@@ -1,5 +1,19 @@
 [
   {
+    "id": "3xqjjzzj5i7n8ii",
+    "timestamp": 1757621186157,
+    "date": "20250912 04:06:26",
+    "ymd": "20250911",
+    "urls": [
+      "https://alivod.a.yximgs.com/livedvr/flv2ts/gifshow/GnN1pkbHNYE_ShowAvcHdL0-AuditAvcOriginL4.1757607082971-14099965.0-16.m3u8?auth_key=1758238868-1252158328-0-d73096ab381b40d7deb2305216de43c4&caller=webservice-gzone-web-api&kpn=GAME_ZONE",
+      "https://alivod.a.yximgs.com/livedvr/flv2ts/gifshow/GnN1pkbHNYE_AuditAvcOriginL4.1757607082971-14099965.0-16.m3u8?auth_key=1758238868-1195096268-0-fb247ad922d0da962237fdf10fa2ef1b&caller=webservice-gzone-web-api&kpn=",
+      "https://alivod.a.yximgs.com/livedvr/flv2ts/gifshow/GnN1pkbHNYE_ShowAvcHdL0-AuditAvcOriginL4.1757607082971-14099965.0-16.m3u8?auth_key=1758238868-223642894-0-9cab919b647d9b1030b0951024a63183&caller=webservice-gzone-web-api&kpn="
+    ],
+    "hasSrt": true,
+    "dsource": "kwai",
+    "isEarlyMorning": true
+  },
+  {
     "id": "3xt2h743gq63664",
     "timestamp": 1757445147512,
     "date": "20250910 03:12:27",

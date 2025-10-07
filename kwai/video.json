@@ -1,5 +1,103 @@
 [
   {
+    "id": "3xr9dnjhs2mhjfs",
+    "timestamp": 1759695461199,
+    "date": "20251006 04:17:41",
+    "ymd": "20251005",
+    "urls": [
+      "https://alivod.a.yximgs.com/livedvr/flv2ts/gifshow/Y0ApxY27D9Y_ShowAvcHdL0-AuditAvcOriginL4.1759671041591-24413809.0-16.m3u8?auth_key=1760307201-708507974-0-156e69779d88de1ad2bf8a724db56688&caller=webservice-gzone-web-api&kpn=GAME_ZONE",
+      "https://alivod.a.yximgs.com/livedvr/flv2ts/gifshow/Y0ApxY27D9Y_AuditAvcOriginL4.1759671041591-24413809.0-16.m3u8?auth_key=1760307201-441231037-0-9b88dd8e200d41d7645e0bea8fd546cc&caller=webservice-gzone-web-api&kpn=",
+      "https://alivod.a.yximgs.com/livedvr/flv2ts/gifshow/Y0ApxY27D9Y_ShowAvcHdL0-AuditAvcOriginL4.1759671041591-24413809.0-16.m3u8?auth_key=1760307201-1607547616-0-104a26cf573cbde5b0083ebd3998be87&caller=webservice-gzone-web-api&kpn="
+    ],
+    "hasSrt": true,
+    "dsource": "kwai",
+    "isEarlyMorning": true
+  },
+  {
+    "id": "3xc97q7e7hki432",
+    "timestamp": 1759610106179,
+    "date": "20251005 04:35:06",
+    "ymd": "20251004",
+    "urls": [
+      "https://alivod.a.yximgs.com/livedvr/flv2ts/gifshow/mNy2XKvKtR0_ShowAvcHdL0-AuditAvcOriginL4.1759584418592-25682698.0-16.m3u8?auth_key=1760232523-345827304-0-1a4cf0c37e31082adfbe8d6b5df553a9&caller=webservice-gzone-web-api&kpn=GAME_ZONE",
+      "https://alivod.a.yximgs.com/livedvr/flv2ts/gifshow/mNy2XKvKtR0_AuditAvcOriginL4.1759584418592-25682698.0-16.m3u8?auth_key=1760232523-1767273194-0-037bf3ed8e1f042de92f79f6af758872&caller=webservice-gzone-web-api&kpn=",
+      "https://alivod.a.yximgs.com/livedvr/flv2ts/gifshow/mNy2XKvKtR0_ShowAvcHdL0-AuditAvcOriginL4.1759584418592-25682698.0-16.m3u8?auth_key=1760232523-1410645566-0-c39cf86d7075a9e4c76ff134344e84fb&caller=webservice-gzone-web-api&kpn="
+    ],
+    "hasSrt": true,
+    "dsource": "kwai",
+    "isEarlyMorning": true
+  },
+  {
+    "id": "3xa2rjqzuhsfmdg",
+    "timestamp": 1759349669883,
+    "date": "20251002 04:14:29",
+    "ymd": "20251001",
+    "urls": [
+      "https://alivod.a.yximgs.com/livedvr/flv2ts/gifshow/2QrAu0OJxjM_ShowAvcHdL0-AuditAvcOriginL4.1759325416479-24241828.0-16.m3u8?auth_key=1759964686-1548184972-0-0eba1b664d1a374e5b38ceea3e6ddf10&caller=webservice-gzone-web-api&kpn=GAME_ZONE",
+      "https://alivod.a.yximgs.com/livedvr/flv2ts/gifshow/2QrAu0OJxjM_AuditAvcOriginL4.1759325416479-24241828.0-16.m3u8?auth_key=1759964686-77267515-0-f359159bee0a39ab57fd38c467692268&caller=webservice-gzone-web-api&kpn=",
+      "https://alivod.a.yximgs.com/livedvr/flv2ts/gifshow/2QrAu0OJxjM_ShowAvcHdL0-AuditAvcOriginL4.1759325416479-24241828.0-16.m3u8?auth_key=1759964686-1538083009-0-c19da4ede0cc95b0f0cc937eac27a89b&caller=webservice-gzone-web-api&kpn="
+    ],
+    "hasSrt": true,
+    "dsource": "kwai",
+    "isEarlyMorning": true
+  },
+  {
+    "id": "3xgr68kfwmrd8gw",
+    "timestamp": 1759177846203,
+    "date": "20250930 04:30:46",
+    "ymd": "20250929",
+    "urls": [
+      "https://alivod.a.yximgs.com/livedvr/flv2ts/gifshow/epBq4MxJR4w_ShowAvcHdL0-AuditAvcOriginL4.1759152604991-25232043.0-16.m3u8?auth_key=1759794901-170268465-0-c8c3dc9420a6b1d2aee735bc40640659&caller=webservice-gzone-web-api&kpn=GAME_ZONE",
+      "https://alivod.a.yximgs.com/livedvr/flv2ts/gifshow/epBq4MxJR4w_AuditAvcOriginL4.1759152604991-25232043.0-16.m3u8?auth_key=1759794901-745503639-0-b6ce299fa4352ae1659ae6744e89b320&caller=webservice-gzone-web-api&kpn=",
+      "https://alivod.a.yximgs.com/livedvr/flv2ts/gifshow/epBq4MxJR4w_ShowAvcHdL0-AuditAvcOriginL4.1759152604991-25232043.0-16.m3u8?auth_key=1759794901-12896629-0-bdd95f3069374306496462de968b4674&caller=webservice-gzone-web-api&kpn="
+    ],
+    "hasSrt": true,
+    "dsource": "kwai",
+    "isEarlyMorning": true
+  },
+  {
+    "id": "3xy8wn7suek4jai",
+    "timestamp": 1759006964209,
+    "date": "20250928 05:02:44",
+    "ymd": "20250927",
+    "urls": [
+      "https://alivod.a.yximgs.com/livedvr/flv2ts/gifshow/7Rn2Kr_Iuvc_ShowAvcHdL0-AuditAvcOriginL4.1758979840016-27114010.0-16.m3u8?auth_key=1759619149-1945843794-0-759e7c01b494628942985e0d8230bffa&caller=webservice-gzone-web-api&kpn=GAME_ZONE",
+      "https://alivod.a.yximgs.com/livedvr/flv2ts/gifshow/7Rn2Kr_Iuvc_AuditAvcOriginL4.1758979840016-27114010.0-16.m3u8?auth_key=1759619149-729217893-0-ae27277d0ee6c46f7261887269d93b42&caller=webservice-gzone-web-api&kpn=",
+      "https://alivod.a.yximgs.com/livedvr/flv2ts/gifshow/7Rn2Kr_Iuvc_ShowAvcHdL0-AuditAvcOriginL4.1758979840016-27114010.0-16.m3u8?auth_key=1759619149-593634111-0-46ca7433b2850571c3858c1268844b58&caller=webservice-gzone-web-api&kpn="
+    ],
+    "hasSrt": true,
+    "dsource": "kwai",
+    "isEarlyMorning": true
+  },
+  {
+    "id": "3xxukh4mzukjr4s",
+    "timestamp": 1758656215385,
+    "date": "20250924 03:36:55",
+    "ymd": "20250923",
+    "urls": [
+      "https://alivod.a.yximgs.com/livedvr/flv2ts/gifshow/0oIkSLd7-vY_ShowAvcHdL0-AuditAvcOriginL4.1758645694024-10517463.0-16.m3u8?auth_key=1759276268-925976709-0-942193dd88b135c2fcf153dea7a2c305&caller=webservice-gzone-web-api&kpn=GAME_ZONE",
+      "https://alivod.a.yximgs.com/livedvr/flv2ts/gifshow/0oIkSLd7-vY_AuditAvcOriginL4.1758645694024-10517463.0-16.m3u8?auth_key=1759276268-913234415-0-04fe428b930d6eabdea8e1af3170f598&caller=webservice-gzone-web-api&kpn=",
+      "https://alivod.a.yximgs.com/livedvr/flv2ts/gifshow/0oIkSLd7-vY_ShowAvcHdL0-AuditAvcOriginL4.1758645694024-10517463.0-16.m3u8?auth_key=1759276268-1134879109-0-9d5efb495dd48279c7291c2882943994&caller=webservice-gzone-web-api&kpn="
+    ],
+    "hasSrt": true,
+    "dsource": "kwai",
+    "isEarlyMorning": true
+  },
+  {
+    "id": "3xb78gymc3j4dne",
+    "timestamp": 1758645690797,
+    "date": "20250924 00:41:30",
+    "ymd": "20250923",
+    "urls": [
+      "https://alivod.a.yximgs.com/livedvr/flv2ts/gifshow/uuo1k5gb_o8_ShowAvcHdL0-AuditAvcOriginL4.1758634228980-11431920.0-16.m3u8?auth_key=1759277921-420681429-0-0a0486412a999972f15773e0249d28ef&caller=webservice-gzone-web-api&kpn=GAME_ZONE",
+      "https://alivod.a.yximgs.com/livedvr/flv2ts/gifshow/uuo1k5gb_o8_AuditAvcOriginL4.1758634228980-11431920.0-16.m3u8?auth_key=1759277921-1011266394-0-15eafd5e5e6243b7f7eebd5cf35d8575&caller=webservice-gzone-web-api&kpn=",
+      "https://alivod.a.yximgs.com/livedvr/flv2ts/gifshow/uuo1k5gb_o8_ShowAvcHdL0-AuditAvcOriginL4.1758634228980-11431920.0-16.m3u8?auth_key=1759277921-317724595-0-5bd3590f34f1c7b1abe5c2118d7f2049&caller=webservice-gzone-web-api&kpn="
+    ],
+    "hasSrt": true,
+    "dsource": "kwai",
+    "isEarlyMorning": true
+  },
+  {
     "id": "3xke8m2fed7rx7k",
     "timestamp": 1758481345024,
     "date": "20250922 03:02:25",
